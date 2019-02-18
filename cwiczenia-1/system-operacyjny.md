@@ -15,9 +15,9 @@ Konfiguracja połączenia sieciowego
 
 | Parametr | wartość           | komentarzu |
 | ------------- |:-------------:| -----:|
-| Adres IP      | XX.XX.XX.XX | przydzielony przez DHCP |
-| Maska podsieci      |  |  |
-| Brama      |  |  |
+| Adres IP      | 10.0.2.15 | przydzielony przez DHCP |
+| Maska podsieci     /24 |  |  |
+| Brama      10.0.2.0|  |  |
 | DNS 1      |  |  |
 | DNS 2      |  |  |
 
