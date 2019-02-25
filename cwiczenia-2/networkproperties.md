@@ -12,12 +12,12 @@ Wejściowe parametry sieci
 | Parametr | wartość | komentarz(opcionalny) |
 | ------------- |:-------------:| -----:|
 |   PC 1 |  debian
-| IP - address  | | 192.168.10.6|
-| MASKA  | | /24|
+| IP - address  |192.168.10.6 | |
+| MASKA  |/24 | |
 |   |  | |
 | PC 2  |  |debian |
-| IP - address  | | 192.168.10.7|
-| MASKA  | | /24|
+| IP - address  |192.168.10.7 | |
+| MASKA  | /24 ||
 
 Weryfikacja połączenia
 
