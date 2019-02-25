@@ -80,8 +80,8 @@ Warto wiedzieć
 | Parametr | wartość | komentarz(opcionalny) |
 | ------------- |:-------------:| -----:|
 | Lokalizacja pliku z konfiguracją sieci| | |
-| UP -> Wyłączenie interfejsu sieciowego| | |
-| DOWN -> Włączenie interfejsu sieciowego| | |
+| UP -> Wyłączenie interfejsu sieciowego| |ifup |
+| DOWN -> Włączenie interfejsu sieciowego| |ifdown |
 | Sprawdzenie obecnych parametrów | | |
-| lista wszystkich interfejsów | | |
+| lista wszystkich interfejsów |ip a | |
 | Które interfejsy jakie porty słuchają | | |
