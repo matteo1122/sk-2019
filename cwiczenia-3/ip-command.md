@@ -25,11 +25,12 @@ ip
 -------------------------
 | subcommand    |  polecenie   | opis  |
 | ------------- |:-------------| :---------------| 
-|   ``addr``    |                               | infirmacje o adresacji i własnościach interfejsów |
+|   ``addr``    |                               | informacje o adresacji i własnościach interfejsów |
 |               |   ``ip addr``                 | informacja o wszystkich interfejsach              |
 |               |   ``ip addr show dev enp0s3`` | informacja o konkretnym interfejsie               |
 |               |   ``ip addr add/del [adres] dev enp0s3``|          dodanie lub usunięcie adresu sieciowego                           |
 |   ``link``    |                        | konfigurowanie, włączanie i zarządzanie urządzeniami sieciowymi |
+|               |   ``ip link set dev enp0s3 name iface3``                      | zmiana nazwy interfejsu sieciowehgo|
 |               |   ``ip link set enp0s3 down/up``                      | wyłączanie/włączanie interfejsu sieciowego |
 |               |   ``ip link show dev enp0s3`` |                krótsze(?) info o konkretnym interfejsie                | 
 |  ``chat``     |   ``python httpchat.py`` | włączenie serwera|
