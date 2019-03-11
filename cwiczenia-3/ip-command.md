@@ -30,6 +30,7 @@ ip
 |               |   ``ip addr show dev enp0s3`` | informacja o konkretnym interfejsie               |
 |               |   ``ip addr add/del [adres] dev enp0s3``|          dodanie lub usunięcie adresu sieciowego                                 |
 |   ``link``    |   ``ip link set enp0s3 down/up``                      | wyłączanie/włączanie interfejsu sieciowego |
+|               |   ``ip link show dev enp0s3`` |                                | 
 |   ``route``   |  | |
 |   ``maddr``   |  | |
 |   ``neigh``   |  | |
