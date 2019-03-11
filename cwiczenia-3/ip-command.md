@@ -28,11 +28,11 @@ ip
 |   ``addr``    |                               | infirmacje o adresacji i własnościach interfejsów |
 |               |   ``ip addr``                 | informacja o wszystkich interfejsach              |
 |               |   ``ip addr show dev enp0s3`` | informacja o konkretnym interfejsie               |
-|               |   ``ip addr add/del [adres] dev enp0s3``|          dodanie lub usunięcie adresu sieciowego                              |
+|               |   ``ip addr add/del [adres] dev enp0s3``|          dodanie lub usunięcie adresu sieciowego                           |
 |   ``link``    |   ``ip link set enp0s3 down/up``                      | wyłączanie/włączanie interfejsu sieciowego |
 |               |   ``ip link show dev enp0s3`` |                krótsze info o konkretnym interfejsie                | 
 |  ``chat``     |   ``python httpchat.py`` | włączenie serwera|
-|  ``chat``     |   ``curl -X POST -d '{"text": "tresc wiadomosci :D"}' http://172.16,100.10:8888/chat`` | wysłanie wiadomości tekstowej|
+|               |   ``curl -X POST -d '{"text": "tresc wiadomosci :D"}' http://172.16,100.10:8888/chat`` | wysłanie wiadomości tekstowej|
 |   ``route``   |  | |
 |   ``maddr``   |  | |
 |   ``neigh``   |  | |
