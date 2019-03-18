@@ -14,8 +14,11 @@ ip
 | subcommand    |  polecenie   | opis  |
 | ------------- |:-------------| :---------------| 
 |   ``route``    |                               | |
-|               |   ``ip route add``             | |
+|               |   ``ip route add``             |dodawanie trasy |
+|               |   ``ip route del``             |usunięcie trasy |
 |               |   ``ip route get``             |znalezienie trasy do danego adresu|
+|               |   ``ip route show``             |wyświetlenie tablicy routingu |
+|               |   ``echo 1 > /proc/sys/net/ipv4/ip_forward``             |włączenie forwardingu |
 
 
 Zadanie
