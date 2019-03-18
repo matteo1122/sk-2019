@@ -15,6 +15,7 @@ ip
 | ------------- |:-------------| :---------------| 
 |   ``route``    |                               | |
 |               |   ``ip route add``             | |
+|               |   ``ip route get``             |znalezienie trasy do danego adresu|
 
 
 Zadanie
