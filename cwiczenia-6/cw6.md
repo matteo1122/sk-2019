@@ -7,16 +7,16 @@ Struktura adresu IP
 Adres sieci
 -----------
 
-1. 
-2.
-3.
+1. zamienić na binarny
+2. BITAND (adres i maska)
+3. adres sieci
 
 Adres rozgłoszeniowy
 -----------
 
-1. 
-2.
-3.
+1. odwrotnosc maski
+2. BITOR (odwrotnosc(maska))
+3. adres rozgłoszeniowy 
 
 
 Podział na równą ilość podsieci
