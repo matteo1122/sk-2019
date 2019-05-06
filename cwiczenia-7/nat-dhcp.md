@@ -52,7 +52,7 @@ Zadanie
       ip route get 10.0.0.1
       ip route add default via 192.168.64.193(adres serwera)ip a
       dhclient -r enp0s3 (USUWANIE USTAWIEŃ UŻYTKOWNIKA DHCP)
-      dhclient -v enp0s3 (DANE KLIENTA)
+      dhclient -v enp0s3 (DANE KLIENTA DHCP)
 
 Zadanie do domu
 ---------------
