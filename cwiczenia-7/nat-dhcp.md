@@ -33,7 +33,8 @@ Zadanie
 
 --------------
 
- ```PC1: ip addr add 192.168.64.193/27 dev enp0s8
+ ```
+ PC1: ip addr add 192.168.64.193/27 dev enp0s8
       echo 1 > /proc/sys/net/ipv4/ip_forward
       iptables -t nat -A POSTROUTING -s 192.168.64.192/27(adres sieci) -o enp0s3 -j MASQUERADE
       iptables -A FORWARD -i enp0s8 -j ACCEPT (OPCJONALNE)
@@ -46,14 +47,16 @@ Zadanie
                                            }
             
       systemctl restart isc-dhcp-server
-      systemctl status isc-dhcp-server```
+      systemctl status isc-dhcp-server
+ ```
  
+ ```
  PC2: ip addr add 192.168.64.193/27 dev enp0s8
       ip route get 10.0.0.1
       ip route add default via 192.168.64.193(adres serwera)ip a
       dhclient -r enp0s3 (USUWANIE USTAWIEŃ UŻYTKOWNIKA DHCP)
       dhclient -v enp0s3 (DANE KLIENTA DHCP)
-
+```
 Zadanie do domu
 ---------------
 
