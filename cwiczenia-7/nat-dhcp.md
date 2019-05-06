@@ -33,15 +33,25 @@ Zadanie
 
 --------------
 
- PC1: *ip addr add 192.168.64.193/27 dev enp0s8
-      *echo 1 > /proc/sys/net/ipv4/ip_forward
-      *iptables -t nat -A POSTROUTING -s 192.168.64.192/27(adres sieci) -o enp0s3 -j MASQUERADE
-      *iptables -A FORWARD -i enp0s8 -j ACCEPT (OPCJONALNE)
+ PC1: ip addr add 192.168.64.193/27 dev enp0s8
+      echo 1 > /proc/sys/net/ipv4/ip_forward
+      iptables -t nat -A POSTROUTING -s 192.168.64.192/27(adres sieci) -o enp0s3 -j MASQUERADE
+      iptables -A FORWARD -i enp0s8 -j ACCEPT (OPCJONALNE)
+      DHCP: nano /etc/default/isc-dhcp-server
+            w pliku -> odhashować configi dla ipv4, dodać interfejs
+            nano /etc/dhcp/dhcpd.conf -> subnet 192.168.64.192 netmask 255.255.255.224{
+                                           option domain-name-servers 8.8.8.8, 8.8.4.4;
+                                           option routers 192.168.64.193;
+                                           range 192.168.64.200 192.168.64.224
+                                           }
+            
+      systemctl restart isc-dhcp-server
+      systemctl status isc-dhcp-server
  
- PC2: *ip addr add 192.168.64.193/27 dev enp0s8
-      *ip route get 10.0.0.1
-      *ip route add default via 192.168.64.193(adres serwera)
- 
+ PC2: ip addr add 192.168.64.193/27 dev enp0s8
+      ip route get 10.0.0.1
+      ip route add default via 192.168.64.193(adres serwera)ip a
+      dhclient -v enp0s3
 
 Zadanie do domu
 ---------------
