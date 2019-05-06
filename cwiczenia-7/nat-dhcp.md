@@ -30,6 +30,17 @@ Zadanie
     * Rozszerz architekturę o automatyczną konfigurację hostów w podsieciach ``192.168.64.192/27`` oraz ``172.16.95.216/29`` z wyykorzystaniem usługi ``DHCP``
     * Rozpocznij od zapoznania się z dokumentacją oraz instalacji programu ``isc-dhcp-server`` dla ``PC1``
 
+
+--------------
+
+ PC1: ip addr add 192.168.64.193/27 dev enp0s8
+      echo 1 > /proc/sys/net/ipv4/ip_forward
+      iptables -t nat -A POSTROUTING -s 192.168.64.192/27(adres sieci) -o enp0s3 -j MASQUERADE
+      iptables -A FORWARD -i enp0s8 -j ACCEPT (OPCJONALNE)
+ 
+ PC2: ip addr add 192.168.64.193/27 dev enp0s8
+      ip route get 10.0.0.1
+      ip route add default via 192.168.64.193(adres serwera)
  
 
 Zadanie do domu
