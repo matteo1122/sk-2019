@@ -51,7 +51,8 @@ Zadanie
  PC2: ip addr add 192.168.64.193/27 dev enp0s8
       ip route get 10.0.0.1
       ip route add default via 192.168.64.193(adres serwera)ip a
-      dhclient -v enp0s3
+      dhclient -r enp0s3 (USUWANIE USTAWIEŃ UŻYTKOWNIKA DHCP)
+      dhclient -v enp0s3 (DANE KLIENTA)
 
 Zadanie do domu
 ---------------
