@@ -12,19 +12,19 @@ Zaproponuj rozwiązanie spełniające poniższe wymagania:
  
 Rozwiązanie
 
-PC0
-|interfejs|adres|
+PC0  
+| interfejs | adres |
 |:--------|:----|
-|eth0|Usługodawca zapewnia domunikację z siecią internet|
-|eth1|172.22.160.1/23|
-|eth2|172.22.128.1/19|
+| eth0 | Usługodawca zapewnia domunikację z siecią internet |
+| eth1 | 172.22.160.1/23 |
+| eth2 | 172.22.128.1/19 |
 
-PC1
+PC1  
 |interfejs|adres|
 |:--------|:----|
 |eth0|172.22.160.2/23|
 
-PC2
+PC2  
 |interfejs|adres|
 |:--------|:----|
 |eth0|172.22.128.2/19|
