@@ -10,3 +10,19 @@ Zaproponuj rozwiązanie spełniające poniższe wymagania:
    * Dokonaj takiego podziału sieci o adresie ``172.22.128.0/17`` aby w ``LAN1`` można było zaadresować ``500`` adresów natomiast w LAN2 ``5000`` adresów    
    * Przygotuj dokumentację powyższej architektury w formie graficznej w programie ``DIA``
  
+Rozwiązanie
+
+PC0
+|interfejs|adres|
+|eth0|Usługodawca zapewnia domunikację z siecią internet|
+|eth1|172.22.160.1/23|
+|eth2|172.22.128.1/19|
+
+PC1
+|interfejs|adres|
+|eth0|172.22.160.2/23|
+
+PC2
+|interfejs|adres|
+|eth0|172.22.128.2/19|
+
