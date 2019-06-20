@@ -32,8 +32,8 @@ PC2
 |:-------------| :------| 
 | eth0 | 172.22.128.2/19 |
 
-Ustawienie adresów IP: ip addr add (adres IP) dev (interfejs enp0s3/8/9)
-Włączenie interfejsu: ip link set (interfejs) up
-Włączenie forwardingu na serwerze: sysctl -w net.ipv4.ip_forward=1
-Dodawanie trasy routingu dla hostów: ip route add default (adres interfejsu serwera w danej sieci)
-Udostępnienie internetu dla podsieci: iptables -t nat -A POSTROUTING -o (interfejs zewnętrzny) -j MASQUERADE
+Ustawienie adresów IP: ip addr add (adres IP) dev (interfejs enp0s3/8/9)  
+Włączenie interfejsu: ip link set (interfejs) up  
+Włączenie forwardingu na serwerze: sysctl -w net.ipv4.ip_forward=1  
+Dodawanie trasy routingu dla hostów: ip route add default (adres interfejsu serwera w danej sieci)  
+Udostępnienie internetu dla podsieci: iptables -t nat -A POSTROUTING -o (interfejs zewnętrzny) -j MASQUERADE  
