@@ -101,23 +101,25 @@ odkomentować config DHCPDv4_CONF
 dopisać do INTERFACESv4=enp0s9 (kolejne interfejsy do obsługi DHCP)  
 /etc/dhcp/dhcpd.con  
 
-``subnet 192.168.201.0 netmask 255.255.252.192 {
+```subnet 192.168.201.0 netmask 255.255.252.192 {
         option routers                  192.168.201.1;
         option subnet-mask              255.255.252.192;
         option domain-name-servers      192.168.201.1;
         range                           192.168.201.2 192.168.201.62;
-}``  
+}
+```  
 ### WiFi  
 /etc/default/isc-dhcp-server  
 dopisać do INTERFACESv4=enp0s8  
 /etc/dhcp/dhcpd.con  
 
-``subnet 10.0.0.0 netmask 255.255.252.0 {
+```subnet 10.0.0.0 netmask 255.255.252.0 {
         option routers                  10.0.0.1;
         option subnet-mask              255.255.252.0;
         option domain-name-servers      10.0.0.1;
         range                           10.0.0.14 10.0.3.250;
-}``  
+}
+```  
 ## Routing  
 Na każdym hoście w sali:  
 ip route add default via (adres interfejsu serwera sal)
