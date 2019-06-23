@@ -101,7 +101,8 @@ odkomentować config DHCPDv4_CONF
 dopisać do INTERFACESv4=enp0s9 (kolejne interfejsy do obsługi DHCP)  
 /etc/dhcp/dhcpd.con  
 
-```subnet 192.168.201.0 netmask 255.255.252.192 {
+```
+subnet 192.168.201.0 netmask 255.255.252.192 {
         option routers                  192.168.201.1;
         option subnet-mask              255.255.252.192;
         option domain-name-servers      192.168.201.1;
@@ -113,7 +114,8 @@ dopisać do INTERFACESv4=enp0s9 (kolejne interfejsy do obsługi DHCP)
 dopisać do INTERFACESv4=enp0s8  
 /etc/dhcp/dhcpd.con  
 
-```subnet 10.0.0.0 netmask 255.255.252.0 {
+```
+subnet 10.0.0.0 netmask 255.255.252.0 {
         option routers                  10.0.0.1;
         option subnet-mask              255.255.252.0;
         option domain-name-servers      10.0.0.1;
